@@ -17,10 +17,13 @@
   /* width: 400px; */
   margin: 0 auto;
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ft_text {
-  padding-left: 67px;
+  /* padding-left: 67px; */
 }
 .ft_text p {
   color: #fff;
@@ -67,6 +70,7 @@
   }
   .ft_text {
     padding-top: 50px;
+    padding-left: 70px;
   }
   .ft_text p {
     padding-left: 70px;

@@ -63,7 +63,7 @@
 .st_2_content_1_text2 {
   width: 90%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 .st_2_content_1_text2 p:nth-child(1) {
   color: #000;
@@ -155,13 +155,13 @@
     margin: 0 auto;
     margin-top: 20px;
     width: 830px;
-    height: 430px;
+    height: 422px;
   }
   .st_2_content_2-1 {
     width: 45%;
   }
   .st_2_content_2-1 img {
-    width: 100%;
+    /* width: 100%; */
   }
   .st_2_content_2-2 {
     width: 60%;

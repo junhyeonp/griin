@@ -7,6 +7,10 @@
 .section_7 {
   margin: 60px 0 130px;
 }
+.highlight {
+  font-weight: bold;
+  color: rgb(189, 41, 41);
+}
 
 .st_title {
   display: flex;

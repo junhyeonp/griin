@@ -1,60 +1,65 @@
 .st_4_main {
-    width: 450px;
-    margin: 0 auto;
+  width: 450px;
+  margin: 0 auto;
 }
 .st_4_1 {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .st_4_1 p {
-    color: #8f8f8f;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px; /* 155.556% */
+  color: #8f8f8f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 155.556% */
 }
 .st_4_2 {
-    text-align: center;
+  text-align: center;
 }
 .st_4_2 img {
-    width: 450px;
-    height: 300px;
+  width: 450px;
+  height: 300px;
 }
 .st_4_btn {
-    padding-top: 20px;
-    text-align: center;
+  padding-top: 20px;
+  text-align: center;
 }
 .st_4_btn button {
-    width: 300px;
-    height: 60px;
-    border-radius: 70px;
-    border: none;
-    background: #aad221;
+  width: 300px;
+  height: 60px;
+  border-radius: 70px;
+  border: none;
+  background: #aad221;
+}
+
+.st_4_btn button:hover {
+  background: #add723;
+  cursor: pointer;
 }
 .st_4_btn button a {
-    text-decoration-line: none;
-    display: flex;
-    justify-content: center;
+  text-decoration-line: none;
+  display: flex;
+  justify-content: center;
 }
 .st_4_btn button p {
-    color: #fff;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-left: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 20px;
 }
 .st_4_btn button img {
-    margin-left: 10px;
-    width: 30px;
+  margin-left: 10px;
+  width: 30px;
 }
 
 @media screen and (min-width: 860px) {
-    .st_4_main {
-        width: 820px;
-        margin: 0 auto;
-    }
-    .st_4_2 img {
-        width: 650px;
-        height: 450px;
-    }
+  .st_4_main {
+    width: 820px;
+    margin: 0 auto;
+  }
+  .st_4_2 img {
+    width: 650px;
+    height: 450px;
+  }
 }

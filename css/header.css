@@ -102,6 +102,17 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 430px) {
+  .hd_logo img {
+    width: 70px;
+  }
+
+  .hd_sns img {
+    width: 30px;
+    margin-left: 10px;
+  }
+}
+
 @media screen and (min-width: 860px) {
   .hd_contents {
     height: 100vh;

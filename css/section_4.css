@@ -1,9 +1,11 @@
 .st_4_main {
-  width: 450px;
+  /* width: 450px; */
   margin: 0 auto;
 }
 .st_4_1 {
   padding-bottom: 30px;
+  width: 95%;
+  padding-left: 20px;
 }
 .st_4_1 p {
   color: #8f8f8f;
@@ -16,8 +18,9 @@
   text-align: center;
 }
 .st_4_2 img {
-  width: 450px;
-  height: 300px;
+  width: 95%;
+  max-width: 450px;
+  /* height: 300px; */
 }
 .st_4_btn {
   padding-top: 20px;

@@ -17,7 +17,7 @@
   color: #8f8f8f;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: normal;
   padding-top: 5px;
 }
@@ -155,7 +155,7 @@
     margin: 0 auto;
     margin-top: 20px;
     width: 830px;
-    height: 422px;
+    height: 420px;
   }
   .st_2_content_2-1 {
     width: 45%;

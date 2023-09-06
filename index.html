@@ -482,23 +482,24 @@
             </div>
             <!--이름-->
             <div class="dateContainer">
-              <input id="Date" type="date" placeholder="상담날짜" />
+              <input id="Date" type="date" />
               <script src="./js/Date.js"></script>
             </div>
             <!--상담날짜-->
             <div class="timeContainer">
               <a class="Time">
-                <select>
-                  <option value="">상담 시간</option>
-                  <option value="">AM 10:00</option>
-                  <option value="">AM 11:00</option>
-                  <option value="">PM 12:00</option>
-                  <option value="">PM 01:00</option>
-                  <option value="">PM 02:00</option>
-                  <option value="">PM 03:00</option>
-                  <option value="">PM 04:00</option>
+                <select id="timeSelect" class="selectField">
+                  <option value="0">상담 시간</option>
+                  <option value="1">AM 10:00</option>
+                  <option value="2">AM 11:00</option>
+                  <option value="3">PM 12:00</option>
+                  <option value="4">PM 01:00</option>
+                  <option value="5">PM 02:00</option>
+                  <option value="6">PM 03:00</option>
+                  <option value="7">PM 04:00</option>
                 </select></a
               >
+              <p class="message" id="timeMessage">상담시간을 정해주세요</p>
             </div>
           </div>
           <!--상담시간-->
@@ -525,17 +526,19 @@
             <p class="message" id="phoneMessage">전화번호를 입력해주세요.</p>
 
             <!--전화번호-->
-
-            <a class="Subject">
-              <select>
-                <option value="">문의주제</option>
-                <option value="">일반 문의</option>
-                <option value="">광고 마케팅 문의</option>
-                <option value="">사업 제휴 문의</option>
-                <option value="">시설 설치 문의</option>
-                <option value="">기타 문의</option>
-              </select>
-            </a>
+            <div class="SubjectContainer">
+              <a class="Subject">
+                <select id="SubjectSelect" class="selectField">
+                  <option value="0">문의주제</option>
+                  <option value="1">일반 문의</option>
+                  <option value="2">광고 마케팅 문의</option>
+                  <option value="3">사업 제휴 문의</option>
+                  <option value="4">시설 설치 문의</option>
+                  <option value="5">기타 문의</option>
+                </select>
+              </a>
+              <p class="message" id="SubjectMessage">문의 주제를 정해주세요</p>
+            </div>
             <!--문의 주제-->
 
             <a class="Title"
@@ -565,10 +568,15 @@
             <p class="message" id="detailMessage">내용을 입력해주세요.</p>
 
             <!--내용-->
-            <label class="Checkbox">
+            <label id="Checkbox">
               개인 정보 수집 동의
-              <input type="checkbox" value="개인 정보 수집 동의"
+              <input
+                type="checkbox"
+                value=""
+                id="inputCheckbox"
+                class="CheckboxField"
             /></label>
+            <p class="message" id="checkboxMessage">동의에 체크해주세요</p>
             <p id="errorMessage" style="display: none; color: red"></p>
             <button id="sendButton">보내기</button>
             <button

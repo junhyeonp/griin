@@ -46,6 +46,15 @@
 .st_6_1_img img:nth-child(1) {
   padding-top: 20px;
 }
+
+.st_6_2_img img:nth-child(1) {
+  width: 95%;
+}
+
+.st_6_2_img div:nth-child(1) {
+  text-align: center;
+}
+
 @media screen and (min-width: 860px) {
   .st_6_1 {
     width: 820px;
@@ -86,9 +95,15 @@
   .st_6_1_img img:nth-child(1) {
     width: 380px;
   }
+
   .st_6_1_img div:nth-child(1) {
     width: 200px;
   }
+
+  .st_6_1_img div:nth-child(1) {
+    width: 90%;
+  }
+
   .st_6_1_img div:nth-child(2) {
     width: 200px;
     height: 320px;

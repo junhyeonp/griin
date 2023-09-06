@@ -88,6 +88,7 @@
 @media screen and (min-width: 860px) {
   .st_3_main {
     display: flex;
+    justify-content: space-between;
     width: 830px;
     margin: 0 auto;
   }
@@ -118,6 +119,10 @@
     padding-bottom: 30px;
     width: 310px;
     height: 300px;
+  }
+
+  .st_sm_title1 {
+    width: 830px;
   }
 }
 

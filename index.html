@@ -13,7 +13,7 @@
     <title>Griin</title>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/marguee.css" />
     <link rel="stylesheet" href="./css/section_1.css" />
     <link rel="stylesheet" href="./css/section_2.css" />
     <link rel="stylesheet" href="./css/section_3.css" />
@@ -21,19 +21,6 @@
     <link rel="stylesheet" href="./css/section_5.css" />
     <link rel="stylesheet" href="./css/section_6.css" />
     <link rel="stylesheet" href="./css/reservation.css" />
-
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"
-    ></script>
 
     <script src="./js/reservation.js"></script>
   </head>
@@ -637,4 +624,27 @@
       </footer>
     </div>
   </body>
+  <!--  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      });
+    });
+  </script> -->
+  <!--스크롤 기능을 위한 자바스크립트 제이쿼리 삽입 -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+
+  <!-- 스크롤 기능을 위한 자바스크립트 제이쿼리 실행 -->
+  <script src="./js/slide.js"></script>
 </html>

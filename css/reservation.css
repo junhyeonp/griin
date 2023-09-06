@@ -139,9 +139,9 @@ select:focus {
   margin-bottom: 10px;
 } /*내용*/
 
-.Checkbox {
+#Checkbox {
   text-align: left;
-  margin-bottom: 20px;
+  margin: 0 0 20px 10px;
   width: 100%;
 } /*체크 박스*/
 

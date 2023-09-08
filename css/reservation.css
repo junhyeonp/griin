@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+.good {
+    display: none;
+}
 
 .container {
     max-width: 640px;
@@ -73,10 +76,22 @@ select:focus {
 
 .nameContainer {
     width: 32%;
+    position: relative;
 }
 
 .dateContainer {
     width: 32%;
+    position: relative;
+}
+
+.dateContainer .message {
+    width: 70%;
+    height: 55%;
+    background-color: #f2f3f8;
+    border-radius: 20px;
+    left: 10px;
+    top: 10px;
+    line-height: 20px;
 }
 
 .timeContainer {
@@ -90,6 +105,10 @@ select:focus {
     border-radius: 20px;
     /* margin-right: 15px; */
 } /*이름*/
+
+#inputName:focus ~ .message {
+    display: none !important;
+}
 
 .dateContainer input {
     /* width: 200px; */
@@ -202,6 +221,8 @@ select:focus {
     font-size: 12px;
     padding-left: 20px;
     margin-bottom: 5px;
+    position: absolute;
+    top: 10px;
 }
 /*반응형 테블릿*/
 @media screen and (max-width: 860px) {
@@ -242,7 +263,7 @@ select:focus {
     }
 }
 /*반응형 모바일*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 575px) {
     .container img {
         width: 40%;
     }
@@ -256,10 +277,16 @@ select:focus {
     }
     .Top .dateContainer input {
         width: 100%;
+        margin-top: 10px;
     }
     .Top .timeContainer select {
         width: 100%;
     }
+
+    #timeSelect {
+        margin-top: 10px;
+    }
+
     .Top .dateContainer p {
         margin-bottom: 20px;
     }

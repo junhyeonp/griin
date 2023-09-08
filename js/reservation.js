@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //각 메세지에 변수 지정
 
     sendButton.addEventListener("click", function (event) {
+        inputName.placeholder = "";
         if (timeSelect.value == "0") {
             timeSelect.classList.add("error");
             timeMessage.style.display = "block";
@@ -116,3 +117,24 @@ document.addEventListener("DOMContentLoaded", function () {
         //체크박스 error 함수
     });
 });
+
+const inputNameCheck = () => {
+    if (inputName.value.trim() === "") {
+        inputName.classList.add("error");
+        nameMessage.style.display = "block";
+    } else {
+        inputName.classList.remove("error");
+        nameMessage.style.display = "none";
+    }
+};
+
+const inputDateCheck = () => {
+    if (inputDate.value === "") {
+        inputDate.classList.add("error");
+        DateMessage.style.display = "block";
+        event.preventDefault();
+    } else {
+        inputDate.classList.remove("error");
+        DateMessage.style.display = "none";
+    }
+};

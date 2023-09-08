@@ -497,6 +497,7 @@
                                 class="inputField"
                                 placeholder="이름"
                                 id="inputName"
+                                onChange="inputNameCheck()"
                             />
                             <p class="message" id="nameMessage">
                                 이름을 입력해주세요.
@@ -509,6 +510,7 @@
                                 id="inputDate"
                                 type="date"
                                 class="DateField"
+                                onChange="inputDateCheck()"
                             />
                             <p class="message" id="DateMessage">
                                 날짜를 정해주세요.
@@ -520,7 +522,9 @@
                         <div class="timeContainer">
                             <a class="Time">
                                 <select id="timeSelect" class="selectField">
-                                    <option value="0">상담 시간</option>
+                                    <option value="0" selected hidden disabled>
+                                        상담 시간
+                                    </option>
                                     <option value="10:00">AM 10:00</option>
                                     <option value="11:00">AM 11:00</option>
                                     <option value="12:00">PM 12:00</option>
@@ -566,7 +570,9 @@
                         <div class="SubjectContainer">
                             <a class="Subject">
                                 <select id="SubjectSelect" class="selectField">
-                                    <option value="0">문의주제</option>
+                                    <option value="0" selected hidden disabled>
+                                        문의주제
+                                    </option>
                                     <option value="일반 문의">일반 문의</option>
                                     <option value="광고 마케팅 문의">
                                         광고 마케팅 문의

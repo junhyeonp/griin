@@ -1,136 +1,159 @@
 /* 초기화 */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+button {
+    font-weight: bold;
+}
+
+.info p {
+    padding: 3px 10px;
+    background-color: #919191;
+    display: inline;
+    max-width: 90px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
 }
 
 .st_title {
-  margin: 50px 0;
+    margin: 50px 0;
 }
 
 .container {
-  max-width: 640px;
-  width: 95%;
-  margin: 0 auto;
+    max-width: 640px;
+    width: 95%;
+    margin: 0 auto;
 }
 /*전체*/
 
 .logo {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 /*사진이랑 예약정보 글자*/
 
 .logo img {
-  margin: 20px 15px 0 0;
-  width: 42px;
+    margin: 20px 15px 0 0;
+    width: 42px;
 }
 /*이미지*/
 
 .logo p {
-  font-size: xxx-large;
-  margin: 22px 0 0 0;
-  font-weight: bold;
+    font-size: xxx-large;
+    margin: 22px 0 0 0;
+    font-weight: bold;
 }
 /*예약정보 글자*/
 
 .info p {
-  font-weight: bold;
-  margin-bottom: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 /*정보확인*/
 
 .btn {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 /*수정, 확인 버튼*/
 .btn button:hover {
-  background-color: #bae724;
-  cursor: pointer;
+    background-color: #bae724;
+    cursor: pointer;
 }
 
 .change {
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #aad221;
-  border: 0 solid;
-  font-size: 18px;
-  color: white;
-  margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #aad221;
+    border: 0 solid;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 /*수정 버튼*/
 
 .identify {
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #aad221;
-  border: 0 solid;
-  font-size: 18px;
-  color: white;
-  margin-bottom: 50px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #aad221;
+    border: 0 solid;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
 }
 /*확인 버튼*/
 
 .container {
-  max-width: 640px;
-  width: 95%;
-  margin: 0 auto;
+    max-width: 640px;
+    width: 95%;
+    margin: 0 auto;
 }
 input {
-  padding: 0 20px;
-  background-color: #f2f3f8;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
+    padding: 0 20px;
+    background-color: #f2f3f8;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
 } /*모든 input*/
 
 input:focus {
-  outline: 1px solid #8e8e8e;
+    outline: 1px solid #8e8e8e;
 }
 
 textarea:focus {
-  outline: 1px solid #8e8e8e;
+    outline: 1px solid #8e8e8e;
 }
 
 textarea {
-  background-color: #f2f3f8;
-  padding: 15px 15px;
-  resize: none;
-  width: 95%;
-  height: 300px;
+    background-color: #f2f3f8;
+    padding: 15px 15px;
+    resize: none;
+    width: 95%;
+    height: 300px;
 }
 /*내용 뒷 배경*/
 
 /*select 배경*/
 select {
-  background-color: #f2f3f8;
-  padding: 0 20px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  color: #666666;
+    background-color: #f2f3f8;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    color: #666666;
 }
 
 select:focus {
-  outline: 1px solid #8e8e8e;
+    outline: 1px solid #8e8e8e;
 }
 
 .Top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 } /*이름 날짜 시간*/
 
 .Bot {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 } /*이메일 전화번호 주제 제목 내용*/
 
 /* .nameContainer {
@@ -146,210 +169,210 @@ select:focus {
 } */
 
 #inputName {
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  margin-right: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 15px;
 } /*이름*/
 
 .dateContainer input {
-  /* width: 200px; */
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  margin-right: 15px;
+    /* width: 200px; */
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 15px;
 } /*날짜 input*/
 
 .timeContainer select {
-  /* width: 200px; */
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  margin-right: 15px;
+    /* width: 200px; */
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 15px;
 } /*시간 selct*/
 
 #inputEmail {
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 } /*이메일*/
 
 #inputPhone {
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 } /*전화번호*/
 
 .Subject select {
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 } /*주제 select*/
 
 #inputTitle {
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 } /*제목*/
 
 #inputDetail {
-  width: 100%;
-  border-radius: 20px;
-  margin-bottom: 10px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
 } /*내용*/
 
 .Checkbox {
-  text-align: left;
-  margin-bottom: 20px;
-  width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
 } /*체크 박스*/
 
 #sendButton {
-  background-color: #aad221;
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  justify-content: center;
-  color: white;
-  border: 0px solid;
-  font-weight: bold;
-  font-size: 1em;
-  cursor: pointer;
+    background-color: #aad221;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: white;
+    border: 0px solid;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 #sendButton:hover {
-  background-color: #aed725;
+    background-color: #aed725;
 }
 /*보내기 버튼*/
 
 .Correction {
-  background-color: #424242;
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  justify-content: center;
-  color: white;
-  border: 0px solid;
-  font-weight: bold;
-  font-size: 1em;
-  cursor: pointer;
+    background-color: #424242;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: white;
+    border: 0px solid;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 .Correction:hover {
-  background-color: #696969;
+    background-color: #696969;
 }
 
 /*오류 나올 때 스타일*/
 .inputField {
-  border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 .inputField.error {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
 .message {
-  display: none;
-  color: red;
+    display: none;
+    color: red;
 }
 /*반응형 테블릿*/
 @media screen and (max-width: 860px) {
-  .Top {
-    width: 100%;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-between;
-  }
-  .Top #inputName {
-    width: 100%;
-  }
-  .Top .dateContainer input {
-    width: 100%;
-  }
-  .Top .timeContainer select {
-    width: 100%;
-  }
-  .Bot #inputEmail {
-    width: 100%;
-  }
-  .Bot #inputPhone {
-    width: 100%;
-  }
-  .Bot #inputTitle {
-    width: 100%;
-  }
-  textarea {
-    width: 70%;
-  }
-  #sendButton {
-    width: 100%;
-    text-align: center;
-  }
-  .Correction {
-    width: 100%;
-    text-align: center;
-  }
+    .Top {
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .Top #inputName {
+        width: 100%;
+    }
+    .Top .dateContainer input {
+        width: 100%;
+    }
+    .Top .timeContainer select {
+        width: 100%;
+    }
+    .Bot #inputEmail {
+        width: 100%;
+    }
+    .Bot #inputPhone {
+        width: 100%;
+    }
+    .Bot #inputTitle {
+        width: 100%;
+    }
+    textarea {
+        width: 70%;
+    }
+    #sendButton {
+        width: 100%;
+        text-align: center;
+    }
+    .Correction {
+        width: 100%;
+        text-align: center;
+    }
 }
 /*반응형 모바일*/
 @media screen and (max-width: 430px) {
-  .container img {
-    width: 40%;
-  }
-  .Top {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .Top #inputName {
-    width: 100%;
-  }
-  .Top .dateContainer input {
-    width: 100%;
-  }
-  .Top .timeContainer select {
-    width: 100%;
-  }
-  .Top .dateContainer p {
-    margin-bottom: 20px;
-  }
-  .Bot #inputEmail {
-    width: 100%;
-  }
-  .Bot #inputPhone {
-    width: 100%;
-  }
-  .Bot #inputTitle {
-    width: 100%;
-  }
-  textarea {
-    width: 100%;
-  }
-  #sendButton {
-    width: 100%;
-  }
-  .Correction {
-    width: 100%;
-  }
-  .nameContainer {
-    width: 100%;
-  }
-  .dateContainer {
-    width: 100%;
-  }
-  .timeContainer {
-    width: 100%;
-  }
+    .container img {
+        width: 40%;
+    }
+    .Top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Top #inputName {
+        width: 100%;
+    }
+    .Top .dateContainer input {
+        width: 100%;
+    }
+    .Top .timeContainer select {
+        width: 100%;
+    }
+    .Top .dateContainer p {
+        margin-bottom: 20px;
+    }
+    .Bot #inputEmail {
+        width: 100%;
+    }
+    .Bot #inputPhone {
+        width: 100%;
+    }
+    .Bot #inputTitle {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+    #sendButton {
+        width: 100%;
+    }
+    .Correction {
+        width: 100%;
+    }
+    .nameContainer {
+        width: 100%;
+    }
+    .dateContainer {
+        width: 100%;
+    }
+    .timeContainer {
+        width: 100%;
+    }
 }
 
 .Top {
-  display: none;
+    display: none;
 }
 .Bot {
-  display: none;
+    display: none;
 }

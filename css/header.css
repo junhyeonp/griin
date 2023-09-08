@@ -50,7 +50,7 @@
 }
 .hd_gnb ul li {
     list-style-type: none;
-    padding-left: 40px;
+    padding-left: 30px;
     color: #000;
     font-size: 18px;
     font-style: normal;
@@ -61,11 +61,22 @@
     background-color: black;
     color: white;
     padding: 5px 10px; /* 원하는 패딩 값으로 조정하세요 */
-    border-radius: 5px; /* 원하는 모양으로 조정하세요 */
+    border-radius: 10px; /* 원하는 모양으로 조정하세요 */
 }
 .hd_gnb ul li a {
     text-decoration-line: none;
     color: #000;
+    padding: 5px 10px;
+}
+
+.hd_gnb ul li a:hover {
+    color: #fff;
+    background-color: #aad221;
+    border-radius: 10px;
+}
+
+.hd_gnb ul li:last-child a:hover {
+    background-color: #3a3a3a;
 }
 
 .hd_gnb {

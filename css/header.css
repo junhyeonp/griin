@@ -70,7 +70,7 @@
     background-color: black;
     color: white;
     padding: 5px 10px; /* 원하는 패딩 값으로 조정하세요 */
-    border-radius: 10gpx; /* 원하는 모양으로 조정하세요 */
+    border-radius: 10px; /* 원하는 모양으로 조정하세요 */
 }
 .hd_gnb ul li a {
     text-decoration-line: none;

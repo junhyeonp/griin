@@ -6,7 +6,10 @@
 }
 .st_6_1,
 .st_3,
-.st_2 {
+.st_2,
+.st_4,
+.st_5_main,
+.st_1_content {
     opacity: 0;
     transition: all 3s;
 }

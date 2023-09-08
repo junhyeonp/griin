@@ -40,3 +40,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+const inputNameCheck = () => {
+    if (inputName.value.trim() === "") {
+        inputName.classList.add("error");
+        nameMessage.style.display = "block";
+    } else {
+        inputName.classList.remove("error");
+        nameMessage.style.display = "none";
+    }
+};
+
+const inputPhoneCheck = () => {
+    if (inputPhone.value.trim() === "") {
+        inputPhone.classList.add("error");
+        phoneMessage.style.display = "block";
+    } else {
+        inputPhone.classList.remove("error");
+        phoneMessage.style.display = "none";
+    }
+};

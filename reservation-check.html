@@ -27,7 +27,12 @@
 
             <div class="contents">
                 <div class="nameContainer">
-                    <input type="text" placeholder="이름" id="inputName" />
+                    <input
+                        type="text"
+                        placeholder="이름"
+                        id="inputName"
+                        onChange="inputNameCheck()"
+                    />
                     <p class="message" id="nameMessage">이름을 입력해주세요.</p>
                 </div>
                 <div class="phoneContainer">
@@ -38,6 +43,7 @@
                         id="inputPhone"
                         oninput="autoHyphen(this)"
                         maxlength="13"
+                        onChange="inputPhoneCheck()"
                     />
                     <p class="message" id="phoneMessage">
                         전화번호를 입력해주세요.

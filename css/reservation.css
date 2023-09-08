@@ -84,18 +84,27 @@ select:focus {
     position: relative;
 }
 
-.dateContainer .message {
+.dateContainer .message,
+.timeContainer .message,
+.SubjectContainer .message {
     width: 70%;
-    height: 55%;
+    height: 50%;
     background-color: #f2f3f8;
     border-radius: 20px;
-    left: 10px;
+    left: 9px;
     top: 10px;
     line-height: 20px;
+    max-width: 140px;
+}
+
+.SubjectContainer .message {
+    top: 20px;
+    left: 2px;
 }
 
 .timeContainer {
     width: 32%;
+    position: relative;
 }
 
 #inputName {
@@ -110,11 +119,27 @@ select:focus {
     display: none !important;
 }
 
+#inputEmail:focus ~ .message {
+    display: none !important;
+}
+
+#inputPhone:focus ~ .message {
+    display: none !important;
+}
+
+#inputTitle:focus ~ .message {
+    display: none !important;
+}
+
+#inputDetail:focus ~ .message {
+    display: none !important;
+}
+
 .dateContainer input {
     /* width: 200px; */
     width: 100%;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 50px;
     /* margin-right: 15px; */
 } /*날짜 input*/
 
@@ -134,33 +159,43 @@ select:focus {
     width: 100%;
     height: 40px;
     border-radius: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 } /*이메일*/
+
+.inputWrapper {
+    position: relative;
+    margin-top: 10px;
+}
 
 #inputPhone {
     width: 100%;
     height: 40px;
     border-radius: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px;*/
 } /*전화번호*/
 
 .Subject select {
     width: 100%;
     height: 40px;
     border-radius: 20px;
+    position: relative;
 } /*주제 select*/
 
+.SubjectContainer {
+    position: relative;
+}
 #inputTitle {
     width: 100%;
     height: 40px;
     border-radius: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    position: relative;
 } /*제목*/
 
 #inputDetail {
     width: 100%;
     border-radius: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 } /*내용*/
 
 #Checkbox {
@@ -222,7 +257,7 @@ select:focus {
     padding-left: 20px;
     margin-bottom: 5px;
     position: absolute;
-    top: 10px;
+    top: 11px;
 }
 /*반응형 테블릿*/
 @media screen and (max-width: 860px) {
@@ -264,6 +299,10 @@ select:focus {
 }
 /*반응형 모바일*/
 @media screen and (max-width: 575px) {
+    .dateContainer .message {
+        top: 19px;
+        left: 0;
+    }
     .container img {
         width: 40%;
     }
@@ -284,7 +323,7 @@ select:focus {
     }
 
     #timeSelect {
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 
     .Top .dateContainer p {
@@ -316,5 +355,6 @@ select:focus {
     }
     .timeContainer {
         width: 100%;
+        margin-top: 10px;
     }
 }

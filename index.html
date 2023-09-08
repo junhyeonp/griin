@@ -521,7 +521,11 @@
 
                         <div class="timeContainer">
                             <a class="Time">
-                                <select id="timeSelect" class="selectField">
+                                <select
+                                    id="timeSelect"
+                                    class="selectField"
+                                    onchange="timeSelectCheck()"
+                                >
                                     <option value="0" selected hidden disabled>
                                         상담 시간
                                     </option>
@@ -542,29 +546,34 @@
                     <!--상담시간-->
 
                     <div class="Bot">
-                        <input
-                            type="email"
-                            class="inputField"
-                            placeholder="이메일"
-                            id="inputEmail"
-                        />
-                        <p class="message" id="emailMessage">
-                            이메일을 입력해주세요.
-                        </p>
+                        <div class="inputWrapper">
+                            <input
+                                type="email"
+                                class="inputField"
+                                placeholder="이메일"
+                                id="inputEmail"
+                                onChange="inputEmailCheck()"
+                            />
+                            <p class="message" id="emailMessage">
+                                이메일을 입력해주세요.
+                            </p>
+                        </div>
 
                         <!--이메일-->
-
-                        <input
-                            type="tel"
-                            class="inputField"
-                            placeholder="전화번호"
-                            id="inputPhone"
-                            oninput="autoHyphen(this)"
-                            maxlength="13"
-                        />
-                        <p class="message" id="phoneMessage">
-                            전화번호를 입력해주세요.
-                        </p>
+                        <div class="inputWrapper">
+                            <input
+                                type="tel"
+                                class="inputField"
+                                placeholder="전화번호"
+                                id="inputPhone"
+                                oninput="autoHyphen(this)"
+                                maxlength="13"
+                                onChange="inputPhoneCheck()"
+                            />
+                            <p class="message" id="phoneMessage">
+                                전화번호를 입력해주세요.
+                            </p>
+                        </div>
 
                         <!--전화번호-->
                         <div class="SubjectContainer">
@@ -591,9 +600,8 @@
                             </p>
                         </div>
                         <!--문의 주제-->
-
-                        <a class="Title"
-                            ><input
+                        <div class="inputWrapper">
+                            <input
                                 type="text"
                                 placeholder="제목"
                                 maxtext="5"
@@ -602,25 +610,28 @@
                                 maxlength="40"
                                 onfocus="this.placeholder=''"
                                 onblur="this.placeholder='제목'"
-                        /></a>
-                        <p class="message" id="titleMessage">
-                            제목을 입력해주세요.
-                        </p>
+                                onchange="inputTitleCheck()"
+                            />
+                            <p class="message" id="titleMessage">
+                                제목을 입력해주세요.
+                            </p>
+                        </div>
 
                         <!--제목-->
-
-                        <a class="Detail">
+                        <div class="inputWrapper">
                             <textarea
                                 placeholder="내용을 입력해 주세요."
                                 onfocus="this.placeholder=''"
                                 onblur="this.placeholder='내용을 입력해 주세요.'"
                                 class="inputField"
                                 id="inputDetail"
+                                onchange="inputDetailCheck()"
                             ></textarea>
-                        </a>
-                        <p class="message" id="detailMessage">
-                            내용을 입력해주세요.
-                        </p>
+
+                            <p class="message" id="detailMessage">
+                                내용을 입력해주세요.
+                            </p>
+                        </div>
 
                         <!--내용-->
                         <label id="Checkbox">

@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sendButton.addEventListener("click", function (event) {
         inputName.placeholder = "";
+        inputEmail.placeholder = "";
+        inputPhone.placeholder = "";
+        inputTitle.placeholder = "";
+        inputDetail.placeholder = "";
+
         if (timeSelect.value == "0") {
             timeSelect.classList.add("error");
             timeMessage.style.display = "block";
@@ -136,5 +141,55 @@ const inputDateCheck = () => {
     } else {
         inputDate.classList.remove("error");
         DateMessage.style.display = "none";
+    }
+};
+
+const timeSelectCheck = () => {
+    if (timeSelect.value == "0") {
+        timeSelect.classList.add("error");
+        timeMessage.style.display = "block";
+    } else {
+        timeSelect.classList.remove("error");
+        timeMessage.style.display = "none";
+    }
+};
+
+const inputEmailCheck = () => {
+    if (inputEmail.value.trim() === "") {
+        inputEmail.classList.add("error");
+        emailMessage.style.display = "block";
+    } else {
+        inputEmail.classList.remove("error");
+        emailMessage.style.display = "none";
+    }
+};
+
+const inputPhoneCheck = () => {
+    if (inputPhone.value.trim() === "") {
+        inputEmail.classList.add("error");
+        emailMessage.style.display = "block";
+    } else {
+        inputPhone.classList.remove("error");
+        emailMessage.style.display = "none";
+    }
+};
+
+const inputTitleCheck = () => {
+    if (inputTitle.value.trim() === "") {
+        inputEmail.classList.add("error");
+        titleMessage.style.display = "block";
+    } else {
+        inputTitle.classList.remove("error");
+        titleMessage.style.display = "none";
+    }
+};
+
+const inputDetailCheck = () => {
+    if (inputDetail.value.trim() === "") {
+        inputEmail.classList.add("error");
+        detailMessage.style.display = "block";
+    } else {
+        inputDetail.classList.remove("error");
+        detailMessage.style.display = "none";
     }
 };

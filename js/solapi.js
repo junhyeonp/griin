@@ -144,8 +144,11 @@ function sendMessage(name, date, time, tel, btn_url, pfid, templateId) {
                     pfId: pfid,
                     templateId: templateId,
                     variables: {
-                        "#{홍길동}": name,
-                        // "#{url}": btn_url,
+                        "#{name}": name,
+                        "#{date}": date,
+                        "#{time}": time,
+                        "#{topic}": topic,
+                        "#{url}": btn_url,
                     },
                 },
             },

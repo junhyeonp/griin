@@ -519,13 +519,13 @@
                             <a class="Time">
                                 <select id="timeSelect" class="selectField">
                                     <option value="0">상담 시간</option>
-                                    <option value="1">AM 10:00</option>
-                                    <option value="2">AM 11:00</option>
-                                    <option value="3">PM 12:00</option>
-                                    <option value="4">PM 01:00</option>
-                                    <option value="5">PM 02:00</option>
-                                    <option value="6">PM 03:00</option>
-                                    <option value="7">PM 04:00</option>
+                                    <option value="10:00">AM 10:00</option>
+                                    <option value="11:00">AM 11:00</option>
+                                    <option value="12:00">PM 12:00</option>
+                                    <option value="13:00">PM 01:00</option>
+                                    <option value="14:00">PM 02:00</option>
+                                    <option value="15:00">PM 03:00</option>
+                                    <option value="16:00">PM 04:00</option>
                                 </select></a
                             >
                             <p class="message" id="timeMessage">
@@ -565,11 +565,17 @@
                             <a class="Subject">
                                 <select id="SubjectSelect" class="selectField">
                                     <option value="0">문의주제</option>
-                                    <option value="1">일반 문의</option>
-                                    <option value="2">광고 마케팅 문의</option>
-                                    <option value="3">사업 제휴 문의</option>
-                                    <option value="4">시설 설치 문의</option>
-                                    <option value="5">기타 문의</option>
+                                    <option value="일반 문의">일반 문의</option>
+                                    <option value="광고 마케팅 문의">
+                                        광고 마케팅 문의
+                                    </option>
+                                    <option value="사업 제휴 문의">
+                                        사업 제휴 문의
+                                    </option>
+                                    <option value="시설 설치 문의">
+                                        시설 설치 문의
+                                    </option>
+                                    <option value="기타 문의">기타 문의</option>
                                 </select>
                             </a>
                             <p class="message" id="SubjectMessage">
@@ -747,6 +753,7 @@
                 let name = document.getElementById("inputName").value;
                 let date = document.getElementById("inputDate").value;
                 let time = document.getElementById("timeSelect").value;
+                let topic = document.getElementById("SubjectSelect").value;
                 let tel = document.getElementById("inputPhone").value;
                 let btn_url = "griin.netlify.app/reservation-check.html";
                 // let templateId = "KA01TP220425021337488b6WEd5EwL3C";

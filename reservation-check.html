@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>예약 정보 및 확인</title>
+    <link rel="stylesheet" href="./css/reservation_check.css" />
+    <link rel="stylesheet" href="./css/section_1.css" />
+    <script src="./js/reservation_check.js"></script>
+  </head>
+  <body>
+    <div class="st_title">
+      <div class="st_logo">
+        <img src="./img/st_logo.png" />
+      </div>
+      <div class="st_text">
+        <p>예약확인</p>
+      </div>
+    </div>
+    <div class="container">
+      <!--예약확인-->
+
+      <div class="contents">
+        <div class="nameContainer">
+          <input type="text" placeholder="이름" id="inputName" />
+          <p class="message" id="nameMessage">이름을 입력해주세요.</p>
+        </div>
+        <div class="phoneContainer">
+          <input
+            type="text"
+            name=""
+            placeholder="전화번호"
+            id="inputPhone"
+            oninput="autoHyphen(this)"
+            maxlength="13"
+          />
+          <p class="message" id="phoneMessage">전화번호를 입력해주세요.</p>
+          <button id="about">조회</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

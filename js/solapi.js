@@ -119,7 +119,7 @@ function getTemplates() {
     request.send();
 }
 
-function sendMessage(name, date, time, tel, btn_url, pfid, templateId) {
+function sendMessage(name, date, time, topic, tel, btn_url, pfid, templateId) {
     let url = "https://api.solapi.com/messages/v4/send-many/detail";
 
     request = new XMLHttpRequest();
@@ -131,7 +131,7 @@ function sendMessage(name, date, time, tel, btn_url, pfid, templateId) {
 
     let authoriztion = getAuthorization();
 
-    request.onreadystatechange = requestResult;
+    // request.onreadystatechange = requestResult;
     request.open("POST", url);
     request.setRequestHeader("Content-Type", "application/json");
     request.setRequestHeader("Authorization", authoriztion);

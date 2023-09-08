@@ -616,13 +616,13 @@
 
                         <!--내용-->
                         <label id="Checkbox">
-                            개인 정보 수집 동의
                             <input
                                 type="checkbox"
                                 value=""
                                 id="inputCheckbox"
                                 class="CheckboxField"
                         /></label>
+                        개인 정보 수집 동의
                         <p
                             id="errorMessage"
                             style="display: none; color: red"
@@ -765,7 +765,16 @@
                 console.log(btn_url);
                 console.log(templateId);
 
-                sendMessage(name, date, time, tel, btn_url, pfid, templateId);
+                sendMessage(
+                    name,
+                    date,
+                    time,
+                    topic,
+                    tel,
+                    btn_url,
+                    pfid,
+                    templateId
+                );
                 console.log(tel);
             }
         </script>

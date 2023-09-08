@@ -154,6 +154,16 @@ const timeSelectCheck = () => {
     }
 };
 
+const SubjectSelectCheck = () => {
+    if (SubjectSelect.value == "0") {
+        SubjectSelect.classList.add("error");
+        SubjectMessage.style.display = "block";
+    } else {
+        SubjectSelect.classList.remove("error");
+        SubjectMessage.style.display = "none";
+    }
+};
+
 const inputEmailCheck = () => {
     if (inputEmail.value.trim() === "") {
         inputEmail.classList.add("error");
@@ -176,7 +186,7 @@ const inputPhoneCheck = () => {
 
 const inputTitleCheck = () => {
     if (inputTitle.value.trim() === "") {
-        inputEmail.classList.add("error");
+        inputTitle.classList.add("error");
         titleMessage.style.display = "block";
     } else {
         inputTitle.classList.remove("error");
@@ -186,7 +196,7 @@ const inputTitleCheck = () => {
 
 const inputDetailCheck = () => {
     if (inputDetail.value.trim() === "") {
-        inputEmail.classList.add("error");
+        inputDetail.classList.add("error");
         detailMessage.style.display = "block";
     } else {
         inputDetail.classList.remove("error");

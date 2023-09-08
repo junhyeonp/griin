@@ -590,7 +590,11 @@
                         <!--전화번호-->
                         <div class="SubjectContainer">
                             <a class="Subject">
-                                <select id="SubjectSelect" class="selectField">
+                                <select
+                                    id="SubjectSelect"
+                                    class="selectField"
+                                    onChange="SubjectSelectCheck()"
+                                >
                                     <option value="0" selected hidden disabled>
                                         문의주제
                                     </option>

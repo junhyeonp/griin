@@ -26,6 +26,7 @@
     <script src="./js/reservation.js"></script>
   </head>
   <body>
+    <div class="modal_background"></div>
     <header id="header">
       <div class="hd_contents">
         <div class="hd_wrapper">
@@ -36,7 +37,9 @@
 
             <div class="hd_gnb">
               <ul>
-                <li><a href="#griin">저희 그린은</a></li>
+                <li>
+                  <a href="#griin">저희 그린은</a>
+                </li>
                 <li><a href="#technic">기술</a></li>
                 <li><a href="#facility">시설</a></li>
                 <li><a href="#products">농산물</a></li>
@@ -52,6 +55,38 @@
               <div class="bar3"></div>
             </div>
           </div>
+        </div>
+        <div class="toggle_menu">
+          <ul>
+            <li>
+              <a href="#griin">저희 그린은</a
+              ><img src="./img/right_arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="#technic">기술</a
+              ><img src="./img/right_arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="#facility">시설</a
+              ><img src="./img/right_arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="#products">농산물</a
+              ><img src="./img/right_arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="#care">그린케어</a
+              ><img src="./img/right_arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="#vision">비전</a
+              ><img src="./img/right_arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="#reservation">상담예약</a
+              ><img src="./img/right_arrow.png" alt="" />
+            </li>
+          </ul>
         </div>
 
         <div class="hd_texts">
@@ -777,8 +812,27 @@
     </script>
 
     <script>
+      let toggle_menu = document.querySelector('.toggle_menu');
+      let body = document.querySelector('body');
+      let toggle_button = document.querySelector('.hd_toggle');
+      let modal_background = document.querySelector('.modal_background');
+
       function toggleHamburger(button) {
         button.classList.toggle('change');
+        toggle_menu.classList.toggle('show');
+        body.classList.toggle('overflow_hidden');
+        modal_background.classList.toggle('show');
+      }
+
+      let toggle_menu_items = document.querySelectorAll('.toggle_menu li');
+
+      for (let i = 0; i < toggle_menu_items.length; i++) {
+        toggle_menu_items[i].addEventListener('click', () => {
+          toggle_menu.classList.toggle('show');
+          toggle_button.classList.toggle('change');
+          modal_background.classList.toggle('show');
+          body.classList.toggle('overflow_hidden');
+        });
       }
     </script>
   </body>

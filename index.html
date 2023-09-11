@@ -1,839 +1,918 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./img/favicon.ico" />
-    <title>Griin</title>
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/marguee.css" />
-    <link rel="stylesheet" href="./css/section_1.css" />
-    <link rel="stylesheet" href="./css/section_2.css" />
-    <link rel="stylesheet" href="./css/section_3.css" />
-    <link rel="stylesheet" href="./css/section_4.css" />
-    <link rel="stylesheet" href="./css/section_5.css" />
-    <link rel="stylesheet" href="./css/section_6.css" />
-    <link rel="stylesheet" href="./css/reservation.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="./img/favicon.ico" />
+        <title>Griin</title>
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/marguee.css" />
+        <link rel="stylesheet" href="./css/section_1.css" />
+        <link rel="stylesheet" href="./css/section_2.css" />
+        <link rel="stylesheet" href="./css/section_3.css" />
+        <link rel="stylesheet" href="./css/section_4.css" />
+        <link rel="stylesheet" href="./css/section_5.css" />
+        <link rel="stylesheet" href="./css/section_6.css" />
+        <link rel="stylesheet" href="./css/reservation.css" />
 
-    <script src="./js/reservation.js"></script>
-  </head>
-  <body>
-    <div class="modal_background"></div>
-    <header id="header">
-      <div class="hd_contents">
-        <div class="hd_wrapper">
-          <div class="hd_logo_wrapper">
-            <div class="hd_logo">
-              <a href="#header"><img src="./img/main_logo.png" /></a>
+        <script src="./js/reservation.js"></script>
+    </head>
+    <body>
+        <a href="#header"><div class="moveTopBtn">Top</div></a>
+        <div class="modal_background"></div>
+        <header id="header">
+            <div class="hd_contents">
+                <div class="hd_wrapper">
+                    <div class="hd_logo_wrapper">
+                        <div class="hd_logo">
+                            <a href="#header"
+                                ><img src="./img/main_logo.png"
+                            /></a>
+                        </div>
+
+                        <div class="hd_gnb">
+                            <ul>
+                                <li>
+                                    <a href="#griin">저희 그린은</a>
+                                </li>
+                                <li><a href="#technic">기술</a></li>
+                                <li><a href="#facility">시설</a></li>
+                                <li><a href="#products">농산물</a></li>
+                                <li><a href="#care">그린케어</a></li>
+                                <li><a href="#vision">비전</a></li>
+                                <li><a href="#reservation">상담예약</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="hd_toggle" onclick="toggleHamburger(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle_menu">
+                    <ul>
+                        <li>
+                            <a href="#griin">저희 그린은</a
+                            ><img src="./img/right_arrow.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#technic">기술</a
+                            ><img src="./img/right_arrow.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#facility">시설</a
+                            ><img src="./img/right_arrow.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#products">농산물</a
+                            ><img src="./img/right_arrow.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#care">그린케어</a
+                            ><img src="./img/right_arrow.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#vision">비전</a
+                            ><img src="./img/right_arrow.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#reservation">상담예약</a
+                            ><img src="./img/right_arrow.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hd_texts">
+                    <div class="hd_text">
+                        <p>스마트 팜 설비부터,<span>농작물 판로까지</span></p>
+                    </div>
+
+                    <div class="hd_text2">
+                        <p>
+                            저비용 고효율 실내농업 솔루션으로 농업의 문제를
+                            해결하고자 노력하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hd_btn">
+                    <a href="#reservation"
+                        ><button><p>상담예약</p></button></a
+                    >
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section_6" id="griin">
+                <div class="st_title">
+                    <div class="st_logo">
+                        <img src="./img/st_logo.png" />
+                    </div>
+                    <div class="st_text">
+                        <p>저희 그린은...</p>
+                    </div>
+                </div>
+
+                <div class="st_6_main">
+                    <!-- 1 -->
+
+                    <div class="st_6_1">
+                        <div class="st_6_1_contents">
+                            <div class="st_6_1_nb">
+                                <p>01</p>
+                            </div>
+                            <div class="st_6_1_text">
+                                <p>판로고민을 해결해줍니다.</p>
+                                <p>
+                                    작물 생산량이 많지 않아 좋은 유통 판로를
+                                    찾기 어려운 중소농가들에게 그린은 고객들의
+                                    <span class="highlight"
+                                        >농산물을 직접 매입하고 판매하는 전량
+                                        수매 시스템</span
+                                    >을 도입, 수매 가격은 농가들이 시장가와
+                                    고정가 중 하나를 택해 결정하며 그린이 사들인
+                                    농산품은 군부대와 김치·나물 가공 공장,
+                                    레스토랑 등 80여곳에 납품하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+
+                    <div class="st_6_1">
+                        <div class="st_6_1_contents">
+                            <div class="st_6_1_nb">
+                                <p>02</p>
+                            </div>
+                            <div class="st_6_1_text">
+                                <p>
+                                    작은 농지에서도 영농정착 가능한 매출 달성이
+                                    가능합니다.
+                                </p>
+                                <p>
+                                    중소규모 농가분들을 대상으로
+                                    <span class="highlight"
+                                        >좁은 공간에서 수익 창출이 가능한 고효율
+                                        농업 솔루션</span
+                                    >을 Griin 시설이 제공해드립니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="st_6_1_img">
+                            <div><img src="./img/st_6_1_img.png" /></div>
+                            <div><img src="./img/st_6_1_img2.png" /></div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+
+                    <div class="st_6_1">
+                        <div class="st_6_1_contents">
+                            <div class="st_6_1_nb">
+                                <p>03</p>
+                            </div>
+                            <div class="st_6_1_text">
+                                <p>고부가가치 작물을 재배합니다.</p>
+                                <p>
+                                    중소농가들의 안정적인 수익 창출을 위해
+                                    <span class="highlight"
+                                        >고부가가치 작물을 재배</span
+                                    >하는 게 중요하다는 점에서 그린은
+                                    허브·스테비아·바질·고추냉이·토마틸로 등 특수
+                                    작물 18가지를 재배하고 있으며, 스마트팜에서
+                                    수확한 특수 작물은 요식업체들과 고정 공급
+                                    계약을 체결해 유통하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st_6_1">
+                        <div class="st_6_1_contents">
+                            <div class="st_6_1_nb">
+                                <p>04</p>
+                            </div>
+                            <div class="st_6_1_text">
+                                <p>적은 예산으로도 설치가 가능합니다.</p>
+                                <p>
+                                    청년 농업인 대다수가 시설 재배를 희망하지만
+                                    지원 자금인 5억원 내에서 농지 매입과 시설
+                                    설치, 초기 투입 비용까지 해결하기 위해선
+                                    규모가 작아질 수 밖에 없는 상황입니다. 그린
+                                    스마트팜은기존 프랜차이즈, 원예 시설의 높은
+                                    설치 비용 대비 ​초기 창업 비용이 낮고 꾸준한
+                                    수익과 농지의 가치를 올릴 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="st_6_2_img">
+                            <div><img src="./img/st_6_1_img3.png" /></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="hd_gnb">
-              <ul>
-                <li>
-                  <a href="#griin">저희 그린은</a>
-                </li>
-                <li><a href="#technic">기술</a></li>
-                <li><a href="#facility">시설</a></li>
-                <li><a href="#products">농산물</a></li>
-                <li><a href="#care">그린케어</a></li>
-                <li><a href="#vision">비전</a></li>
-                <li><a href="#reservation">상담예약</a></li>
-              </ul>
+            <div class="section_3" id="technic">
+                <div class="st_title">
+                    <div class="st_logo">
+                        <img src="./img/st_logo.png" />
+                    </div>
+                    <div class="st_text">
+                        <p>Griin의 기술</p>
+                    </div>
+                </div>
+                <div class="st_3">
+                    <div class="st_sm_title st_sm_title1">
+                        <p>1. 그린의 특수양액</p>
+                        <p>
+                            그린의 특수 양액은
+                            <span class="highlight"> 나노파티클 기술</span>을
+                            이용해 보다 식물의 성장을 증가시키고 식물이 풍부한
+                            영양소를 가질 수 있도록 합니다.
+                        </p>
+                    </div>
+
+                    <div class="st_3_main">
+                        <div class="st_3_1">
+                            <img src="./img/st3_img.png" />
+                        </div>
+
+                        <div class="st_3_2">
+                            <img src="./img/st3_img2.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="st_3">
+                    <div class="st_sm_title st_sm_title1">
+                        <p>2. 자체 LED 국내 생산</p>
+                        <p>
+                            Griin LED는 식물, 꽃, 과일 등이 자랄 수 있도록
+                            다양한 스펙트럼과 풍부한 적외선이 포함,식물 성장에
+                            따라
+                            <span class="highlight"
+                                >자동으로 LED거리를 조절</span
+                            >합니다.
+                        </p>
+                    </div>
+
+                    <div class="st_3_main2">
+                        <div class="st_3_3">
+                            <img src="./img/st3_img3.png" />
+                        </div>
+
+                        <div class="st_3_4">
+                            <img src="./img/st3_img4.png" />
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="hd_toggle" onclick="toggleHamburger(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-          </div>
-        </div>
-        <div class="toggle_menu">
-          <ul>
-            <li>
-              <a href="#griin">저희 그린은</a
-              ><img src="./img/right_arrow.png" alt="" />
-            </li>
-            <li>
-              <a href="#technic">기술</a
-              ><img src="./img/right_arrow.png" alt="" />
-            </li>
-            <li>
-              <a href="#facility">시설</a
-              ><img src="./img/right_arrow.png" alt="" />
-            </li>
-            <li>
-              <a href="#products">농산물</a
-              ><img src="./img/right_arrow.png" alt="" />
-            </li>
-            <li>
-              <a href="#care">그린케어</a
-              ><img src="./img/right_arrow.png" alt="" />
-            </li>
-            <li>
-              <a href="#vision">비전</a
-              ><img src="./img/right_arrow.png" alt="" />
-            </li>
-            <li>
-              <a href="#reservation">상담예약</a
-              ><img src="./img/right_arrow.png" alt="" />
-            </li>
-          </ul>
-        </div>
+            <!-- 섹선2 -->
+            <div class="section_2" id="facility">
+                <div class="st_title">
+                    <div class="st_logo">
+                        <img src="./img/st_logo.png" />
+                    </div>
+                    <div class="st_text">
+                        <p>Griin의 시설</p>
+                    </div>
+                </div>
+                <!-- 섹션2-1 -->
+                <div class="st_2">
+                    <div class="st_sm_title">
+                        <p>1. 수직 재배 시설</p>
+                        <p>
+                            설치 유연성과 고효율화로 규모 제약 없이 활용 가능한
+                            실내 수직 시스템
+                        </p>
+                    </div>
 
-        <div class="hd_texts">
-          <div class="hd_text">
-            <p>스마트 팜 설비부터,<span>농작물 판로까지</span></p>
-          </div>
+                    <div class="st_2_contents">
+                        <div class="st_2_content_1">
+                            <div class="st_2_content_1_img">
+                                <img src="./img/st_2_content_1.png" />
+                            </div>
+                            <div class="st_2_content_1_text">
+                                <p>일반 수경재배 스마트팜 재배방식</p>
+                                <p>
+                                    &#183; 각 단별 온습도 유지 어려움으로 인한
+                                    생산량 감소 <br />
+                                    &#183; 양액 침전물 발생으로 잦은 청소가 필요
+                                    <br />
+                                    &#183; LED와 작물 사이 간격 조절 불가 <br />
+                                </p>
+                                <p>
+                                    ※ 수경재배란? 채소를 흙 대신 물과
+                                    영양분(배양액)으로 재배하는 방식
+                                </p>
+                            </div>
+                        </div>
 
-          <div class="hd_text2">
-            <p>
-              저비용 고효율 실내농업 솔루션으로 농업의 문제를 해결하고자
-              노력하고 있습니다.
-            </p>
-          </div>
-        </div>
+                        <div class="st_2_content_img">
+                            <img src="./img/VS.png" />
+                        </div>
 
-        <div class="hd_btn">
-          <a href="#reservation"
-            ><button><p>상담예약</p></button></a
-          >
-        </div>
-      </div>
-    </header>
+                        <div class="st_2_content_4">
+                            <div class="st_2_content_1_img">
+                                <img src="./img/st_2_content_2.png" />
+                            </div>
+                            <div class="st_2_content_1_text2">
+                                <p>Griin의 수직 수경재배 타워 재배방식</p>
+                                <p>
+                                    &#183; 좁은 공간에 더 많은 수확이 가능
+                                    <br />
+                                    &#183; 양액 침전물 발생이 적음 <br />
+                                    &#183; LED와 작물간의 사이 간격 자유롭게
+                                    조절 가능 <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 섹션2-2 -->
+                <div class="st_2">
+                    <div class="st_sm_title">
+                        <p>2. 무전력 재배 시설</p>
+                        <p>
+                            저렴한 비용으로 전력없이 식물에 양액 공급이 가능한
+                            시스템
+                        </p>
+                    </div>
 
-    <section>
-      <div class="section_6" id="griin">
-        <div class="st_title">
-          <div class="st_logo">
-            <img src="./img/st_logo.png" />
-          </div>
-          <div class="st_text">
-            <p>저희 그린은...</p>
-          </div>
-        </div>
+                    <div class="st_2_contents2">
+                        <div class="st_2_content_2-1">
+                            <img src="./img/st_2_content_2-1.png" alt="" />
+                        </div>
 
-        <div class="st_6_main">
-          <!-- 1 -->
-
-          <div class="st_6_1">
-            <div class="st_6_1_contents">
-              <div class="st_6_1_nb">
-                <p>01</p>
-              </div>
-              <div class="st_6_1_text">
-                <p>판로고민을 해결해줍니다.</p>
-                <p>
-                  작물 생산량이 많지 않아 좋은 유통 판로를 찾기 어려운
-                  중소농가들에게 그린은 고객들의
-                  <span class="highlight"
-                    >농산물을 직접 매입하고 판매하는 전량 수매 시스템</span
-                  >을 도입, 수매 가격은 농가들이 시장가와 고정가 중 하나를 택해
-                  결정하며 그린이 사들인 농산품은 군부대와 김치·나물 가공 공장,
-                  레스토랑 등 80여곳에 납품하고 있습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2 -->
-
-          <div class="st_6_1">
-            <div class="st_6_1_contents">
-              <div class="st_6_1_nb">
-                <p>02</p>
-              </div>
-              <div class="st_6_1_text">
-                <p>작은 농지에서도 영농정착 가능한 매출 달성이 가능합니다.</p>
-                <p>
-                  중소규모 농가분들을 대상으로
-                  <span class="highlight"
-                    >좁은 공간에서 수익 창출이 가능한 고효율 농업 솔루션</span
-                  >을 Griin 시설이 제공해드립니다.
-                </p>
-              </div>
+                        <div class="st_2_content_2-2">
+                            <p>
+                                그린의 무전력 재배 시설은
+                                <span class="highlight"
+                                    >양액 컨트롤러, 전기 모터</span
+                                >
+                                등 부대시설 없이 간단하고 쉽게 사용할 수 있고
+                                수위 차에 의해 유속이 발생하는 물리적 현상을
+                                이용한 장치 입니다.
+                            </p>
+                            <p>
+                                화분에 장착된
+                                <span class="highlight">수위 조절 장치</span>로
+                                화분 내 공급된 물이 소진되면 물이 공급되는
+                                방식으로
+                                <span class="highlight">과잉 공급을 예방</span
+                                >할 수 있는 시스템 입니다.
+                            </p>
+                            <p>
+                                물의 공급하기 위한 전력 소모가 전혀 없는
+                                <span class="highlight">에너지 절감형</span>으로
+                                유지비를 줄일 수 있습니다. 또한 단순한 구조로
+                                고장 시 수리가 쉽고 버려지는 폐양액이 없어
+                                친환경적 입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="st_6_1_img">
-              <div><img src="./img/st_6_1_img.png" /></div>
-              <div><img src="./img/st_6_1_img2.png" /></div>
-            </div>
-          </div>
+            <div class="section_4" id="products">
+                <div class="st_title">
+                    <div class="st_logo">
+                        <img src="./img/st_logo.png" />
+                    </div>
+                    <div class="st_text">
+                        <p>Griin의 농산물</p>
+                    </div>
+                </div>
 
-          <!-- 3 -->
+                <div class="st_4">
+                    <div class="st_4_main">
+                        <div class="st_4_1">
+                            <p>
+                                그린의 농산물은 김포시의 청년농업인으로 구성된
+                                ‘소소한농'이 운영하는 직거래 장터 뿐만 아니라
+                                온라인 쇼핑몰인 ‘소소마켓’에서도 판매가 됩니다.
+                                그린은 ‘소소한농’의 일원으로 지역공동체 활성화와
+                                농가활성화를 지향합니다.
+                            </p>
+                        </div>
+                        <div class="st_4_2">
+                            <img src="./img/st4_img.png" />
+                        </div>
+                    </div>
 
-          <div class="st_6_1">
-            <div class="st_6_1_contents">
-              <div class="st_6_1_nb">
-                <p>03</p>
-              </div>
-              <div class="st_6_1_text">
-                <p>고부가가치 작물을 재배합니다.</p>
-                <p>
-                  중소농가들의 안정적인 수익 창출을 위해
-                  <span class="highlight">고부가가치 작물을 재배</span>하는 게
-                  중요하다는 점에서 그린은 허브·스테비아·바질·고추냉이·토마틸로
-                  등 특수 작물 18가지를 재배하고 있으며, 스마트팜에서 수확한
-                  특수 작물은 요식업체들과 고정 공급 계약을 체결해 유통하고
-                  있습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="st_6_1">
-            <div class="st_6_1_contents">
-              <div class="st_6_1_nb">
-                <p>04</p>
-              </div>
-              <div class="st_6_1_text">
-                <p>적은 예산으로도 설치가 가능합니다.</p>
-                <p>
-                  청년 농업인 대다수가 시설 재배를 희망하지만 지원 자금인 5억원
-                  내에서 농지 매입과 시설 설치, 초기 투입 비용까지 해결하기
-                  위해선 규모가 작아질 수 밖에 없는 상황입니다. 그린
-                  스마트팜은기존 프랜차이즈, 원예 시설의 높은 설치 비용 대비
-                  ​초기 창업 비용이 낮고 꾸준한 수익과 농지의 가치를 올릴 수
-                  있습니다.
-                </p>
-              </div>
+                    <div class="st_4_btn">
+                        <button>
+                            <a href="https://www.sosomarkets.com/about"
+                                ><p>소소마켓 바로가기</p>
+                                <img src="./img/st_4_btn.png"
+                            /></a>
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div class="st_6_2_img">
-              <div><img src="./img/st_6_1_img3.png" /></div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="section_5" id="care">
+                <div class="st_title">
+                    <div class="st_logo">
+                        <img src="./img/st_logo.png" />
+                    </div>
+                    <div class="st_text">
+                        <p>그린케어 서비스</p>
+                    </div>
+                </div>
 
-      <div class="section_3" id="technic">
-        <div class="st_title">
-          <div class="st_logo">
-            <img src="./img/st_logo.png" />
-          </div>
-          <div class="st_text">
-            <p>Griin의 기술</p>
-          </div>
-        </div>
-        <div class="st_3">
-          <div class="st_sm_title st_sm_title1">
-            <p>1. 그린의 특수양액</p>
-            <p>
-              그린의 특수 양액은
-              <span class="highlight"> 나노파티클 기술</span>을 이용해 보다
-              식물의 성장을 증가시키고 식물이 풍부한 영양소를 가질 수 있도록
-              합니다.
-            </p>
-          </div>
-
-          <div class="st_3_main">
-            <div class="st_3_1">
-              <img src="./img/st3_img.png" />
-            </div>
-
-            <div class="st_3_2">
-              <img src="./img/st3_img2.png" />
-            </div>
-          </div>
-        </div>
-        <div class="st_3">
-          <div class="st_sm_title st_sm_title1">
-            <p>2. 자체 LED 국내 생산</p>
-            <p>
-              Griin LED는 식물, 꽃, 과일 등이 자랄 수 있도록 다양한 스펙트럼과
-              풍부한 적외선이 포함,식물 성장에 따라
-              <span class="highlight">자동으로 LED거리를 조절</span>합니다.
-            </p>
-          </div>
-
-          <div class="st_3_main2">
-            <div class="st_3_3">
-              <img src="./img/st3_img3.png" />
+                <div class="st_5_main">
+                    <div class="st_5_1">
+                        <img src="./img/st_5_img.png" />
+                    </div>
+                    <div class="st_5_2">
+                        <p>
+                            서비스 및 지원을 통해 고장에 대한 리스크를 줄이고
+                            생산성을 높일 수 있도록, 그린 케어는 365일 고품질의
+                            농산물을 재배할 수 있도록 도와드립니다. 또한 시설
+                            유지 보수 및 유통 판로 제공을 위한 서비스를
+                            선택적으로 이용 가능합니다.
+                        </p>
+                        <p>
+                            *그린케어 서비스는 수직타워 A/S, 모종 제공, 양액
+                            제공, 농산물 수매, ICT 관련 소모품 및 유지 보수,
+                            타워 이식, 정기 방문점검 등을 포함합니다.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="st_3_4">
-              <img src="./img/st3_img4.png" />
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="section_1" id="vision">
+                <div class="st_title">
+                    <div class="st_logo">
+                        <img src="./img/st_logo.png" />
+                    </div>
+                    <div class="st_text">
+                        <p>Griin의 비전</p>
+                    </div>
+                </div>
 
-      <!-- 섹선2 -->
-      <div class="section_2" id="facility">
-        <div class="st_title">
-          <div class="st_logo">
-            <img src="./img/st_logo.png" />
-          </div>
-          <div class="st_text">
-            <p>Griin의 시설</p>
-          </div>
-        </div>
-        <!-- 섹션2-1 -->
-        <div class="st_2">
-          <div class="st_sm_title">
-            <p>1. 수직 재배 시설</p>
-            <p>
-              설치 유연성과 고효율화로 규모 제약 없이 활용 가능한 실내 수직
-              시스템
-            </p>
-          </div>
+                <div class="st_1_contents">
+                    <div class="st_1_content">
+                        <div class="st_1_nb">
+                            <p>1</p>
+                        </div>
+                        <div class="st_1_line">
+                            <img src="./img/Vector 1.png" />
+                        </div>
+                        <div class="st_1_text">
+                            <p>
+                                소외된 중소규모 농가들을 위한 농업 기술을
+                                개발합니다.
+                            </p>
+                            <p>
+                                중,소규모 농업인들이 실현 가능한 실내농업
+                                솔루션을 구축하여 함께 성장하고자 노력하고
+                                있습니다.
+                            </p>
+                        </div>
+                    </div>
 
-          <div class="st_2_contents">
-            <div class="st_2_content_1">
-              <div class="st_2_content_1_img">
-                <img src="./img/st_2_content_1.png" />
-              </div>
-              <div class="st_2_content_1_text">
-                <p>일반 수경재배 스마트팜 재배방식</p>
-                <p>
-                  &#183; 각 단별 온습도 유지 어려움으로 인한 생산량 감소 <br />
-                  &#183; 양액 침전물 발생으로 잦은 청소가 필요
-                  <br />
-                  &#183; LED와 작물 사이 간격 조절 불가 <br />
-                </p>
-                <p>
-                  ※ 수경재배란? 채소를 흙 대신 물과 영양분(배양액)으로 재배하는
-                  방식
-                </p>
-              </div>
-            </div>
+                    <div class="st_1_content">
+                        <div class="st_1_content2">
+                            <div class="st_1_nb">
+                                <p>2</p>
+                            </div>
+                            <div class="st_1_line">
+                                <img src="./img/Vector 1.png" />
+                            </div>
+                            <div class="st_1_text">
+                                <p>
+                                    지구 환경에 도움 되는 농업을 하도록
+                                    노력합니다.
+                                </p>
+                                <p>
+                                    이산화탄소 재활용, 저 탄소 비료 사용, 양액
+                                    순환시스템으로 물 절약을 실천하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="st_2_content_img">
-              <img src="./img/VS.png" />
-            </div>
-
-            <div class="st_2_content_4">
-              <div class="st_2_content_1_img">
-                <img src="./img/st_2_content_2.png" />
-              </div>
-              <div class="st_2_content_1_text2">
-                <p>Griin의 수직 수경재배 타워 재배방식</p>
-                <p>
-                  &#183; 좁은 공간에 더 많은 수확이 가능
-                  <br />
-                  &#183; 양액 침전물 발생이 적음 <br />
-                  &#183; LED와 작물간의 사이 간격 자유롭게 조절 가능 <br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 섹션2-2 -->
-        <div class="st_2">
-          <div class="st_sm_title">
-            <p>2. 무전력 재배 시설</p>
-            <p>저렴한 비용으로 전력없이 식물에 양액 공급이 가능한 시스템</p>
-          </div>
-
-          <div class="st_2_contents2">
-            <div class="st_2_content_2-1">
-              <img src="./img/st_2_content_2-1.png" alt="" />
+                    <div class="st_1_content">
+                        <div class="st_1_content3">
+                            <div class="st_1_nb">
+                                <p>3</p>
+                            </div>
+                            <div class="st_1_line">
+                                <img src="./img/Vector 1.png" />
+                            </div>
+                            <div class="st_1_text">
+                                <p>안정적인 먹거리 공급을 위해 노력합니다.</p>
+                                <p>
+                                    농산물을 신선하고 합리적인 가격에 공급하고
+                                    소비자와 가까운 곳에서 수익 실현이 가능한
+                                    농업을 할 수 있도록 노력합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="st_2_content_2-2">
-              <p>
-                그린의 무전력 재배 시설은
-                <span class="highlight">양액 컨트롤러, 전기 모터</span>
-                등 부대시설 없이 간단하고 쉽게 사용할 수 있고 수위 차에 의해
-                유속이 발생하는 물리적 현상을 이용한 장치 입니다.
-              </p>
-              <p>
-                화분에 장착된
-                <span class="highlight">수위 조절 장치</span>로 화분 내 공급된
-                물이 소진되면 물이 공급되는 방식으로
-                <span class="highlight">과잉 공급을 예방</span>할 수 있는 시스템
-                입니다.
-              </p>
-              <p>
-                물의 공급하기 위한 전력 소모가 전혀 없는
-                <span class="highlight">에너지 절감형</span>으로 유지비를 줄일
-                수 있습니다. 또한 단순한 구조로 고장 시 수리가 쉽고 버려지는
-                폐양액이 없어 친환경적 입니다.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="section_7" id="reservation">
+                <div class="st_title">
+                    <div class="st_logo">
+                        <img src="./img/st_logo.png" />
+                    </div>
+                    <div class="st_text">
+                        <p>상담예약</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <!--form 넣지 않았음-->
 
-      <div class="section_4" id="products">
-        <div class="st_title">
-          <div class="st_logo">
-            <img src="./img/st_logo.png" />
-          </div>
-          <div class="st_text">
-            <p>Griin의 농산물</p>
-          </div>
-        </div>
+                    <div class="Top">
+                        <div class="nameContainer">
+                            <input
+                                type="text"
+                                class="inputField"
+                                placeholder="이름"
+                                id="inputName"
+                                onChange="inputNameCheck()"
+                            />
+                            <p class="message" id="nameMessage">
+                                이름을 입력해주세요.
+                            </p>
+                        </div>
+                        <!--이름-->
 
-        <div class="st_4">
-          <div class="st_4_main">
-            <div class="st_4_1">
-              <p>
-                그린의 농산물은 김포시의 청년농업인으로 구성된 ‘소소한농'이
-                운영하는 직거래 장터 뿐만 아니라 온라인 쇼핑몰인
-                ‘소소마켓’에서도 판매가 됩니다. 그린은 ‘소소한농’의 일원으로
-                지역공동체 활성화와 농가활성화를 지향합니다.
-              </p>
-            </div>
-            <div class="st_4_2">
-              <img src="./img/st4_img.png" />
-            </div>
-          </div>
+                        <div class="dateContainer">
+                            <input
+                                id="inputDate"
+                                type="date"
+                                class="DateField"
+                                onChange="inputDateCheck()"
+                            />
+                            <p class="message" id="DateMessage">
+                                날짜를 정해주세요.
+                            </p>
+                        </div>
+                        <script src="./js/Date.js"></script>
+                        <!--상담날짜-->
 
-          <div class="st_4_btn">
-            <button>
-              <a href="https://www.sosomarkets.com/about"
-                ><p>소소마켓 바로가기</p>
-                <img src="./img/st_4_btn.png"
-              /></a>
-            </button>
-          </div>
-        </div>
-      </div>
+                        <div class="timeContainer">
+                            <a class="Time">
+                                <select
+                                    id="timeSelect"
+                                    class="selectField"
+                                    onchange="timeSelectCheck()"
+                                >
+                                    <option value="0" selected hidden disabled>
+                                        상담 시간
+                                    </option>
+                                    <option value="10:00">AM 10:00</option>
+                                    <option value="11:00">AM 11:00</option>
+                                    <option value="12:00">PM 12:00</option>
+                                    <option value="13:00">PM 01:00</option>
+                                    <option value="14:00">PM 02:00</option>
+                                    <option value="15:00">PM 03:00</option>
+                                    <option value="16:00">PM 04:00</option>
+                                </select></a
+                            >
+                            <p class="message" id="timeMessage">
+                                상담시간을 정해주세요
+                            </p>
+                        </div>
+                    </div>
+                    <!--상담시간-->
 
-      <div class="section_5" id="care">
-        <div class="st_title">
-          <div class="st_logo">
-            <img src="./img/st_logo.png" />
-          </div>
-          <div class="st_text">
-            <p>그린케어 서비스</p>
-          </div>
-        </div>
+                    <div class="Bot">
+                        <div class="inputWrapper">
+                            <input
+                                type="email"
+                                class="inputField"
+                                placeholder="이메일"
+                                id="inputEmail"
+                                onChange="inputEmailCheck()"
+                            />
+                            <p class="message" id="emailMessage">
+                                이메일을 입력해주세요.
+                            </p>
+                        </div>
 
-        <div class="st_5_main">
-          <div class="st_5_1">
-            <img src="./img/st_5_img.png" />
-          </div>
-          <div class="st_5_2">
-            <p>
-              서비스 및 지원을 통해 고장에 대한 리스크를 줄이고 생산성을 높일 수
-              있도록, 그린 케어는 365일 고품질의 농산물을 재배할 수 있도록
-              도와드립니다. 또한 시설 유지 보수 및 유통 판로 제공을 위한
-              서비스를 선택적으로 이용 가능합니다.
-            </p>
-            <p>
-              *그린케어 서비스는 수직타워 A/S, 모종 제공, 양액 제공, 농산물
-              수매, ICT 관련 소모품 및 유지 보수, 타워 이식, 정기 방문점검 등을
-              포함합니다.
-            </p>
-          </div>
-        </div>
-      </div>
+                        <!--이메일-->
+                        <div class="inputWrapper">
+                            <input
+                                type="tel"
+                                class="inputField"
+                                placeholder="전화번호"
+                                id="inputPhone"
+                                oninput="autoHyphen(this)"
+                                maxlength="13"
+                                onChange="inputPhoneCheck()"
+                            />
+                            <p class="message" id="phoneMessage">
+                                전화번호를 입력해주세요.
+                            </p>
+                        </div>
 
-      <div class="section_1" id="vision">
-        <div class="st_title">
-          <div class="st_logo">
-            <img src="./img/st_logo.png" />
-          </div>
-          <div class="st_text">
-            <p>Griin의 비전</p>
-          </div>
-        </div>
+                        <!--전화번호-->
+                        <div class="SubjectContainer">
+                            <a class="Subject">
+                                <select
+                                    id="SubjectSelect"
+                                    class="selectField"
+                                    onChange="SubjectSelectCheck()"
+                                >
+                                    <option value="0" selected hidden disabled>
+                                        문의주제
+                                    </option>
+                                    <option value="일반 문의">일반 문의</option>
+                                    <option value="광고 마케팅 문의">
+                                        광고 마케팅 문의
+                                    </option>
+                                    <option value="사업 제휴 문의">
+                                        사업 제휴 문의
+                                    </option>
+                                    <option value="시설 설치 문의">
+                                        시설 설치 문의
+                                    </option>
+                                    <option value="기타 문의">기타 문의</option>
+                                </select>
+                            </a>
+                            <p class="message" id="SubjectMessage">
+                                문의 주제를 정해주세요
+                            </p>
+                        </div>
+                        <!--문의 주제-->
+                        <div class="inputWrapper">
+                            <input
+                                type="text"
+                                placeholder="제목"
+                                maxtext="5"
+                                class="inputField"
+                                id="inputTitle"
+                                maxlength="40"
+                                onfocus="this.placeholder=''"
+                                onchange="inputTitleCheck()"
+                            />
+                            <p class="message" id="titleMessage">
+                                제목을 입력해주세요.
+                            </p>
+                        </div>
 
-        <div class="st_1_contents">
-          <div class="st_1_content">
-            <div class="st_1_nb">
-              <p>1</p>
-            </div>
-            <div class="st_1_line">
-              <img src="./img/Vector 1.png" />
-            </div>
-            <div class="st_1_text">
-              <p>소외된 중소규모 농가들을 위한 농업 기술을 개발합니다.</p>
-              <p>
-                중,소규모 농업인들이 실현 가능한 실내농업 솔루션을 구축하여 함께
-                성장하고자 노력하고 있습니다.
-              </p>
-            </div>
-          </div>
+                        <!--제목-->
+                        <div class="inputWrapper">
+                            <textarea
+                                placeholder="내용을 입력해 주세요."
+                                onfocus="this.placeholder=''"
+                                class="inputField"
+                                id="inputDetail"
+                                onchange="inputDetailCheck()"
+                            ></textarea>
 
-          <div class="st_1_content">
-            <div class="st_1_content2">
-              <div class="st_1_nb">
-                <p>2</p>
-              </div>
-              <div class="st_1_line">
-                <img src="./img/Vector 1.png" />
-              </div>
-              <div class="st_1_text">
-                <p>지구 환경에 도움 되는 농업을 하도록 노력합니다.</p>
-                <p>
-                  이산화탄소 재활용, 저 탄소 비료 사용, 양액 순환시스템으로 물
-                  절약을 실천하고 있습니다.
-                </p>
-              </div>
-            </div>
-          </div>
+                            <p class="message" id="detailMessage">
+                                내용을 입력해주세요.
+                            </p>
+                        </div>
 
-          <div class="st_1_content">
-            <div class="st_1_content3">
-              <div class="st_1_nb">
-                <p>3</p>
-              </div>
-              <div class="st_1_line">
-                <img src="./img/Vector 1.png" />
-              </div>
-              <div class="st_1_text">
-                <p>안정적인 먹거리 공급을 위해 노력합니다.</p>
-                <p>
-                  농산물을 신선하고 합리적인 가격에 공급하고 소비자와 가까운
-                  곳에서 수익 실현이 가능한 농업을 할 수 있도록 노력합니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                        <!--내용-->
+                        <label id="Checkbox">
+                            <input
+                                type="checkbox"
+                                value=""
+                                id="inputCheckbox"
+                                class="CheckboxField"
+                            />개인 정보 수집 동의</label
+                        >
 
-      <div class="section_7" id="reservation">
-        <div class="st_title">
-          <div class="st_logo">
-            <img src="./img/st_logo.png" />
-          </div>
-          <div class="st_text">
-            <p>상담예약</p>
-          </div>
-        </div>
-        <div class="container">
-          <!--form 넣지 않았음-->
-
-          <div class="Top">
-            <div class="nameContainer">
-              <input
-                type="text"
-                class="inputField"
-                placeholder="이름"
-                id="inputName"
-                onChange="inputNameCheck()"
-              />
-              <p class="message" id="nameMessage">이름을 입력해주세요.</p>
-            </div>
-            <!--이름-->
-
-            <div class="dateContainer">
-              <input
-                id="inputDate"
-                type="date"
-                class="DateField"
-                onChange="inputDateCheck()"
-              />
-              <p class="message" id="DateMessage">날짜를 정해주세요.</p>
-            </div>
-            <script src="./js/Date.js"></script>
-            <!--상담날짜-->
-
-            <div class="timeContainer">
-              <a class="Time">
-                <select
-                  id="timeSelect"
-                  class="selectField"
-                  onchange="timeSelectCheck()"
-                >
-                  <option value="0" selected hidden disabled>상담 시간</option>
-                  <option value="10:00">AM 10:00</option>
-                  <option value="11:00">AM 11:00</option>
-                  <option value="12:00">PM 12:00</option>
-                  <option value="13:00">PM 01:00</option>
-                  <option value="14:00">PM 02:00</option>
-                  <option value="15:00">PM 03:00</option>
-                  <option value="16:00">PM 04:00</option>
-                </select></a
-              >
-              <p class="message" id="timeMessage">상담시간을 정해주세요</p>
-            </div>
-          </div>
-          <!--상담시간-->
-
-          <div class="Bot">
-            <div class="inputWrapper">
-              <input
-                type="email"
-                class="inputField"
-                placeholder="이메일"
-                id="inputEmail"
-                onChange="inputEmailCheck()"
-              />
-              <p class="message" id="emailMessage">이메일을 입력해주세요.</p>
-            </div>
-
-            <!--이메일-->
-            <div class="inputWrapper">
-              <input
-                type="tel"
-                class="inputField"
-                placeholder="전화번호"
-                id="inputPhone"
-                oninput="autoHyphen(this)"
-                maxlength="13"
-                onChange="inputPhoneCheck()"
-              />
-              <p class="message" id="phoneMessage">전화번호를 입력해주세요.</p>
-            </div>
-
-            <!--전화번호-->
-            <div class="SubjectContainer">
-              <a class="Subject">
-                <select
-                  id="SubjectSelect"
-                  class="selectField"
-                  onChange="SubjectSelectCheck()"
-                >
-                  <option value="0" selected hidden disabled>문의주제</option>
-                  <option value="일반 문의">일반 문의</option>
-                  <option value="광고 마케팅 문의">광고 마케팅 문의</option>
-                  <option value="사업 제휴 문의">사업 제휴 문의</option>
-                  <option value="시설 설치 문의">시설 설치 문의</option>
-                  <option value="기타 문의">기타 문의</option>
-                </select>
-              </a>
-              <p class="message" id="SubjectMessage">문의 주제를 정해주세요</p>
-            </div>
-            <!--문의 주제-->
-            <div class="inputWrapper">
-              <input
-                type="text"
-                placeholder="제목"
-                maxtext="5"
-                class="inputField"
-                id="inputTitle"
-                maxlength="40"
-                onfocus="this.placeholder=''"
-                onchange="inputTitleCheck()"
-              />
-              <p class="message" id="titleMessage">제목을 입력해주세요.</p>
-            </div>
-
-            <!--제목-->
-            <div class="inputWrapper">
-              <textarea
-                placeholder="내용을 입력해 주세요."
-                onfocus="this.placeholder=''"
-                class="inputField"
-                id="inputDetail"
-                onchange="inputDetailCheck()"
-              ></textarea>
-
-              <p class="message" id="detailMessage">내용을 입력해주세요.</p>
-            </div>
-
-            <!--내용-->
-            <label id="Checkbox">
-              <input
-                type="checkbox"
-                value=""
-                id="inputCheckbox"
-                class="CheckboxField"
-              />개인 정보 수집 동의</label
-            >
-
-            <p id="errorMessage" style="display: none; color: red"></p>
-            <button id="sendButton" onclick="btn_sendMessage()">
-              상담 예약
-            </button>
-            <!-- <button
+                        <p
+                            id="errorMessage"
+                            style="display: none; color: red"
+                        ></p>
+                        <button id="sendButton" onclick="btn_sendMessage()">
+                            상담 예약
+                        </button>
+                        <!-- <button
                             class="Correction"
                             onclick="location.href='reservation_check.html'"
                         >
                             예약정보 확인 및 수정
                         </button> -->
-          </div>
-        </div>
-      </div>
-      <section class="marquee">
-        <div class="marquee__inner" aria-hidden="true">
-          <span><img src="./img/logo1.png" alt="logo" /></span>
-          <span><img src="./img/logo2.png" alt="logo" /></span>
-          <span><img src="./img/logo3.png" alt="logo" /></span>
-          <span><img src="./img/logo4.png" alt="logo" /></span>
-          <span><img src="./img/logo5.png" alt="logo" /></span>
-          <span><img src="./img/logo6.png" alt="logo" /></span>
-          <span><img src="./img/logo7.png" alt="logo" /></span>
-          <!-- 복사된 부분 -->
-          <span><img src="./img/logo1.png" alt="logo" /></span>
-          <span><img src="./img/logo2.png" alt="logo" /></span>
-          <span><img src="./img/logo3.png" alt="logo" /></span>
-          <span><img src="./img/logo4.png" alt="logo" /></span>
-          <span><img src="./img/logo5.png" alt="logo" /></span>
-          <span><img src="./img/logo6.png" alt="logo" /></span>
-          <span><img src="./img/logo7.png" alt="logo" /></span>
-        </div>
-      </section>
-    </section>
-
-    <div class="footer_wrapper">
-      <footer>
-        <div class="ft_contents">
-          <div class="ft_texts_1">
-            <div class="ft_logo">
-              <img src="./img/main_logo.png" />
+                    </div>
+                </div>
             </div>
-            <div class="ft_text">
-              <p>농업 법인 주식회사 그린</p>
-              <p>사업자 등록 번호 : 347-86-00558</p>
-              <p>대표이사 : 권기표</p>
-              <p>​경기도 김포시 고촌읍 상미로 9번길 51-5</p>
-            </div>
-          </div>
+            <section class="marquee">
+                <div class="marquee__inner" aria-hidden="true">
+                    <span><img src="./img/logo1.png" alt="logo" /></span>
+                    <span><img src="./img/logo2.png" alt="logo" /></span>
+                    <span><img src="./img/logo3.png" alt="logo" /></span>
+                    <span><img src="./img/logo4.png" alt="logo" /></span>
+                    <span><img src="./img/logo5.png" alt="logo" /></span>
+                    <span><img src="./img/logo6.png" alt="logo" /></span>
+                    <span><img src="./img/logo7.png" alt="logo" /></span>
+                    <!-- 복사된 부분 -->
+                    <span><img src="./img/logo1.png" alt="logo" /></span>
+                    <span><img src="./img/logo2.png" alt="logo" /></span>
+                    <span><img src="./img/logo3.png" alt="logo" /></span>
+                    <span><img src="./img/logo4.png" alt="logo" /></span>
+                    <span><img src="./img/logo5.png" alt="logo" /></span>
+                    <span><img src="./img/logo6.png" alt="logo" /></span>
+                    <span><img src="./img/logo7.png" alt="logo" /></span>
+                </div>
+            </section>
+        </section>
 
-          <div class="ft_texts_2">
-            <p>031-986-4643</p>
-            <p>월요일 ~ 금요일 / 주말 및 공유일 휴무</p>
-            <p>AM 10:00 ~ PM 04:00</p>
+        <div class="footer_wrapper">
+            <footer>
+                <div class="ft_contents">
+                    <div class="ft_texts_1">
+                        <div class="ft_logo">
+                            <img src="./img/main_logo.png" />
+                        </div>
+                        <div class="ft_text">
+                            <p>농업 법인 주식회사 그린</p>
+                            <p>사업자 등록 번호 : 347-86-00558</p>
+                            <p>대표이사 : 권기표</p>
+                            <p>​경기도 김포시 고촌읍 상미로 9번길 51-5</p>
+                        </div>
+                    </div>
 
-            <div class="hd_sns">
-              <a target="_blank" href="https://smartstore.naver.com/griin"
-                ><img src="./img/sns_logo1.png" alt=""
-              /></a>
-              <a target="_blank" href="https://blog.naver.com/griinagriculture"
-                ><img src="./img/sns_logo2.png" alt=""
-              /></a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/griin_official/"
-                ><img src="./img/sns_logo3.png" alt=""
-              /></a>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/@griinagriculture"
-                ><img src="./img/sns_logo4.png" alt=""
-              /></a>
-            </div>
-          </div>
+                    <div class="ft_texts_2">
+                        <p>031-986-4643</p>
+                        <p>월요일 ~ 금요일 / 주말 및 공유일 휴무</p>
+                        <p>AM 10:00 ~ PM 04:00</p>
+
+                        <div class="hd_sns">
+                            <a
+                                target="_blank"
+                                href="https://smartstore.naver.com/griin"
+                                ><img src="./img/sns_logo1.png" alt=""
+                            /></a>
+                            <a
+                                target="_blank"
+                                href="https://blog.naver.com/griinagriculture"
+                                ><img src="./img/sns_logo2.png" alt=""
+                            /></a>
+                            <a
+                                target="_blank"
+                                href="https://www.instagram.com/griin_official/"
+                                ><img src="./img/sns_logo3.png" alt=""
+                            /></a>
+                            <a
+                                target="_blank"
+                                href="https://www.youtube.com/@griinagriculture"
+                                ><img src="./img/sns_logo4.png" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-      </footer>
-    </div>
 
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
 
-          const targetId = this.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
 
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
             });
-          }
-        });
-      });
-    </script>
+        </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
-    <script src="./js/solapi.js"></script>
+        <!-- 알림톡 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+        <script src="./js/solapi.js"></script>
 
-    <script>
-      function getPfInfo() {
-        let pfid = document.getElementById('pfid').value;
-        getPlusfriend(pfid);
-      }
+        <script>
+            function getPfInfo() {
+                let pfid = document.getElementById("pfid").value;
+                getPlusfriend(pfid);
+            }
 
-      function getPfInfos() {
-        getPlusfriends();
-      }
+            function getPfInfos() {
+                getPlusfriends();
+            }
 
-      function getTemplateInfo() {
-        let templateId = document.getElementById('template-id').value;
-        getTemplate(templateId);
-      }
+            function getTemplateInfo() {
+                let templateId = document.getElementById("template-id").value;
+                getTemplate(templateId);
+            }
 
-      function getTemplateInfos() {
-        getTemplates();
-      }
+            function getTemplateInfos() {
+                getTemplates();
+            }
 
-      function btn_sendMessage() {
-        let name = document.getElementById('inputName').value;
-        let date = document.getElementById('inputDate').value;
-        let time = document.getElementById('timeSelect').value;
-        let topic = document.getElementById('SubjectSelect').value;
-        let tel = document.getElementById('inputPhone').value;
-        let btn_url = 'griin.netlify.app/reservation-check.html';
-        // let templateId = "KA01TP220425021337488b6WEd5EwL3C";
-        let templateId = 'KA01TP230907031132489YMOKtxOhUqF';
-        let pfid = 'KA01PF22041206411o33TFWW9Sl71Ppp';
+            function btn_sendMessage() {
+                let name = document.getElementById("inputName").value;
+                let date = document.getElementById("inputDate").value;
+                let time = document.getElementById("timeSelect").value;
+                let topic = document.getElementById("SubjectSelect").value;
+                let tel = document.getElementById("inputPhone").value;
+                let btn_url = "griin.netlify.app/reservation-check.html";
+                // let templateId = "KA01TP220425021337488b6WEd5EwL3C";
+                let templateId = "KA01TP230907031132489YMOKtxOhUqF";
+                let pfid = "KA01PF22041206411o33TFWW9Sl71Ppp";
 
-        console.log(name);
-        console.log(tel);
-        console.log(btn_url);
-        console.log(templateId);
+                console.log(name);
+                console.log(tel);
+                console.log(btn_url);
+                console.log(templateId);
 
-        sendMessage(name, date, time, topic, tel, btn_url, pfid, templateId);
-        console.log(tel);
-      }
-    </script>
+                sendMessage(
+                    name,
+                    date,
+                    time,
+                    topic,
+                    tel,
+                    btn_url,
+                    pfid,
+                    templateId
+                );
+                console.log(tel);
+            }
+        </script>
 
-    <!-- 애니메이션 -->
-    <script>
-      let observer = new IntersectionObserver((e) => {
-        e.forEach((박스) => {
-          if (박스.isIntersecting) {
-            박스.target.style.opacity = 1;
-          } else {
-          }
-        });
-      });
+        <!-- 애니메이션 -->
+        <script>
+            let observer = new IntersectionObserver((e) => {
+                e.forEach((박스) => {
+                    if (박스.isIntersecting) {
+                        박스.target.style.opacity = 1;
+                    } else {
+                    }
+                });
+            });
 
-      let section6 = document.querySelectorAll('.st_6_1');
-      observer.observe(section6[0]);
-      observer.observe(section6[1]);
-      observer.observe(section6[2]);
-      observer.observe(section6[3]);
+            let section6 = document.querySelectorAll(".st_6_1");
+            observer.observe(section6[0]);
+            observer.observe(section6[1]);
+            observer.observe(section6[2]);
+            observer.observe(section6[3]);
 
-      let section3 = document.querySelectorAll('.st_3');
-      observer.observe(section3[0]);
-      observer.observe(section3[1]);
+            let section3 = document.querySelectorAll(".st_3");
+            observer.observe(section3[0]);
+            observer.observe(section3[1]);
 
-      let section2 = document.querySelectorAll('.st_2');
-      observer.observe(section2[0]);
-      observer.observe(section2[1]);
+            let section2 = document.querySelectorAll(".st_2");
+            observer.observe(section2[0]);
+            observer.observe(section2[1]);
 
-      let section4 = document.querySelectorAll('.st_4');
-      observer.observe(section4[0]);
+            let section4 = document.querySelectorAll(".st_4");
+            observer.observe(section4[0]);
 
-      let section5 = document.querySelectorAll('.st_5_main');
-      observer.observe(section5[0]);
+            let section5 = document.querySelectorAll(".st_5_main");
+            observer.observe(section5[0]);
 
-      let section1 = document.querySelectorAll('.st_1_content');
-      observer.observe(section1[0]);
-      observer.observe(section1[1]);
-      observer.observe(section1[2]);
-    </script>
+            let section1 = document.querySelectorAll(".st_1_content");
+            observer.observe(section1[0]);
+            observer.observe(section1[1]);
+            observer.observe(section1[2]);
+        </script>
 
-    <script>
-      let toggle_menu = document.querySelector('.toggle_menu');
-      let body = document.querySelector('body');
-      let toggle_button = document.querySelector('.hd_toggle');
-      let modal_background = document.querySelector('.modal_background');
+        <script>
+            let toggle_menu = document.querySelector(".toggle_menu");
+            let body = document.querySelector("body");
+            let toggle_button = document.querySelector(".hd_toggle");
+            let modal_background = document.querySelector(".modal_background");
 
-      function toggleHamburger(button) {
-        button.classList.toggle('change');
-        toggle_menu.classList.toggle('show');
-        body.classList.toggle('overflow_hidden');
-        modal_background.classList.toggle('show');
-      }
+            function toggleHamburger(button) {
+                button.classList.toggle("change");
+                toggle_menu.classList.toggle("show");
+                body.classList.toggle("overflow_hidden");
+                modal_background.classList.toggle("show");
+            }
 
-      let toggle_menu_items = document.querySelectorAll('.toggle_menu li');
+            let toggle_menu_items =
+                document.querySelectorAll(".toggle_menu li");
 
-      for (let i = 0; i < toggle_menu_items.length; i++) {
-        toggle_menu_items[i].addEventListener('click', () => {
-          toggle_menu.classList.toggle('show');
-          toggle_button.classList.toggle('change');
-          modal_background.classList.toggle('show');
-          body.classList.toggle('overflow_hidden');
-        });
-      }
-    </script>
-  </body>
+            for (let i = 0; i < toggle_menu_items.length; i++) {
+                toggle_menu_items[i].addEventListener("click", () => {
+                    toggle_menu.classList.toggle("show");
+                    toggle_button.classList.toggle("change");
+                    modal_background.classList.toggle("show");
+                    body.classList.toggle("overflow_hidden");
+                });
+            }
+        </script>
+    </body>
 </html>

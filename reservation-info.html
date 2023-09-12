@@ -54,15 +54,15 @@
         <!--상담날짜-->
         <div class="timeContainer">
           <a class="Time">
-            <select>
+            <select id="timeSelect">
               <option value="">상담 시간</option>
-              <option value="">AM 10:00</option>
-              <option value="">AM 11:00</option>
-              <option value="">PM 12:00</option>
-              <option value="">PM 01:00</option>
-              <option value="">PM 02:00</option>
-              <option value="">PM 03:00</option>
-              <option value="">PM 04:00</option>
+              <option value="10:00">AM 10:00</option>
+              <option value="11:00">AM 11:00</option>
+              <option value="12:00">PM 12:00</option>
+              <option value="13:00">PM 01:00</option>
+              <option value="14:00">PM 02:00</option>
+              <option value="15:00">PM 03:00</option>
+              <option value="16:00">PM 04:00</option>
             </select></a
           >
         </div>
@@ -93,13 +93,13 @@
         <!--전화번호-->
 
         <a class="Subject">
-          <select>
+          <select id="SubjectSelect">
             <option value="">문의주제</option>
-            <option value="">일반 문의</option>
-            <option value="">광고 마케팅 문의</option>
-            <option value="">사업 제휴 문의</option>
-            <option value="">시설 설치 문의</option>
-            <option value="">기타 문의</option>
+            <option value="일반 문의">일반 문의</option>
+            <option value="광고 마케팅 문의">광고 마케팅 문의</option>
+            <option value="사업 제휴 문의">사업 제휴 문의</option>
+            <option value="시설 설치 문의">시설 설치 문의</option>
+            <option value="기타 문의">기타 문의</option>
           </select>
         </a>
         <!--문의 주제-->
@@ -160,7 +160,9 @@
 
       function btn_sendMessage() {
         let name = document.getElementById('inputName').value;
+
         let date = document.getElementById('inputDate').value;
+        console.log(date);
         let time = document.getElementById('timeSelect').value;
         let topic = document.getElementById('SubjectSelect').value;
         let tel = document.getElementById('inputPhone').value;
